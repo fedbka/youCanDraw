@@ -1,6 +1,29 @@
 @import "../vendor/normalize.css";
 @import "../vendor/fonts/inter.css";
 .page {
-  background-color: #e5e5e5;
+  background-color: #ffffff;
   font-family: "Inter", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+}
+
+.header {
+  background-color: #222222;
+  width: calc(100vw - 40px);
+  margin: 10px auto;
+  border-radius: 20px;
+}
+
+.main {
+  flex: 1;
+}
+
+.footer {
+  flex-shrink: 0;
+  background-color: #222222;
+  width: calc(100vw - 40px);
+  margin: 10px auto;
+  border-radius: 20px;
 }/*# sourceMappingURL=index.css.map */

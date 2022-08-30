@@ -1,4 +1,5 @@
-.header {
+.footer {
+  flex-shrink: 0;
   background-color: $background-dark;
   width: calc(100vw - 40px);
   margin: 10px auto;
