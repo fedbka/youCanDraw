@@ -1,6 +1,17 @@
 .header {
   background-color: $background-dark;
-  width: calc(100vw - 40px);
-  margin: 10px auto;
   border-radius: 20px;
+  color: $text-color-light;
+  display: flex;
+  margin: 10px auto;
+  width: calc(100vw - 40px);
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1120px;
+    padding: 0;
+    width: 100%;
+  }
 }

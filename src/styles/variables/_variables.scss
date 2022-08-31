@@ -1,6 +1,20 @@
 // Fonts
 $font-family: "Inter", Arial, sans-serif;
-// Primary theme
-$background: #ffffff;
-$background-darker: #f8f8f8;
-$background-dark: #222222;
+// light theme ('lt-' prefix)
+$lt-text-color-dark: #111111;
+$lt-text-color-dark-less: rgba(17, 17, 17, 0.6);
+$lt-text-color-light: #ffffff;
+$lt-text-color-light-less: rgba(255, 255, 255, 0.7);
+
+$lt-background-light: #ffffff;
+$lt-background-light-less: #f8f8f8;
+$lt-background-dark: #222222;
+
+// dark theme ('dt' prefix)
+// for future purpose
+
+$background:$lt-background-light;
+$background-dark: $lt-background-dark;
+$text-color-dark: $lt-text-color-dark;
+$text-color-light: $lt-text-color-light;
+
