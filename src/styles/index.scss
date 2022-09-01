@@ -1,7 +1,11 @@
 @import "../vendor/normalize.css";
 @import "../vendor/fonts/inter.css";
 @import "./variables/variables";
+@import "./mixins/typographic";
 @import "./blocks/page";
 @import "./blocks/header";
 @import "./blocks/main";
+@import "./blocks/cards";
+@import "./blocks/images";
+
 @import "./blocks/footer";

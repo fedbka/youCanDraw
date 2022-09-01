@@ -3,15 +3,60 @@
   border-radius: 20px;
   color: $text-color-light;
   display: flex;
-  margin: 10px auto;
-  width: calc(100vw - 40px);
+  margin: 10px auto 30px;
+  width: calc(100% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 
   &__content {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    max-width: 1120px;
-    padding: 0;
+    max-width: 1100px;
+    padding-top: 30px;
     width: 100%;
+    min-height: 640px;
+  }
+
+  &__logo {
+    max-width: 40px;
+  }
+
+  &__title {
+    @include h1();
+    margin: 0;
+    max-width: 650px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  &__subtitle {
+    @include text-xl();
+    margin: 0;
+    max-width: 450px;
+    opacity: 0.7;
+  }
+
+  &__image {
+    position: absolute;
+    top: -10px;
+    right: 140px;
+  }
+
+  &__link {
+    @include text();
+    font-weight: 600;
+    width: 240px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $lt-background-light-less;
+    text-decoration: none;
+    color: $lt-background-dark;
+    border-radius: 8px;
+    margin-top: 106px;
   }
 }
