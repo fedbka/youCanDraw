@@ -92,10 +92,13 @@
   padding: 90px 0 30px;
   display: flex;
   text-align: center;
+  max-width: 1100px;
+  text-align: left;
+  box-sizing: border-box;
 }
 
 .cards {
-  margin: 30px auto 30px;
+  margin: 20px auto 30px;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -149,6 +152,45 @@
   list-style-type: none;
   justify-content: space-between;
   max-width: 1125px;
+}
+
+.form {
+  background-color: #f8f8f8;
+  margin: 90px auto;
+  padding: 60px 60px 60px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1100px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form__title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  max-width: 500px;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 20px;
+}
+.form__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0 0 100px;
+  opacity: 0.6;
+}
+.form__fieldset {
+  display: flex;
+  gap: 40px;
+  border: none;
+  width: 100%;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .footer {
