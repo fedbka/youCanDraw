@@ -15,7 +15,7 @@
         max-width: 500px;
         text-align: center;
         margin: 0;
-        padding: 0 0 20px;
+        padding: 3px 0 20px;
     }
 
     &__subtitle {
@@ -30,8 +30,35 @@
         gap: 40px;
         border: none;
         width: 100%;
-        justify-content: center;
+        justify-content: stretch;
         margin: 0;
         padding: 0;
+        padding-bottom: 20px;
+    }
+
+    &__input {
+        @include text();
+        width: 100%;
+        border-radius: 8px;
+        border: none;
+        padding: 15px 20px 15px;
+    }
+
+    &__button {
+        @include text();
+        font-weight: 600;
+        width: 194px;
+        height: 54px;
+        display: flex;
+        align-self: flex-end;
+        justify-content: center;
+        align-items: center;
+        background-color: $lt-background-dark;
+        border: none;
+        text-decoration: none;
+        color: $lt-background-light;
+        border-radius: 8px;
+        margin-top: 14px;
+    
     }
 }
