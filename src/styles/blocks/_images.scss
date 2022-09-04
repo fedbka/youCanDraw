@@ -19,3 +19,20 @@
     }
 }
 
+@media screen and (max-width: 1439px) {
+    .images {
+
+        &__image {
+            max-width: calc(226px + ((100vw - 768px) * (350 - 226) / (1439 - 768)));
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .images {
+        display: none;
+        &__image {
+            max-width: calc(226px + ((100vw - 768px) * (350 - 226) / (1439 - 768)));
+        }
+    }
+}

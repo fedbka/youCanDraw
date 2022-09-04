@@ -1,35 +1,125 @@
+@function calcFluid($f-min, $f-max, $w-min, $w-max) {
+  $k: calc(($f-max - $f-min) / ($w-max - $w-min));
+  $b: $f-min - $k * $w-min;
+
+  @return calc(#{$k} * 100vw + #{$b});
+}
+
+
 @mixin h1() {
-    font-weight: $h1-font-weight;
-    font-size: $h1-font-size;
-    line-height: $h1-line-height;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 69px;
+
+  @media screen and (max-width: 1439px) {
+    font-size: calc(33px + (100vw - 768px) * (60 - 33) / (1439 - 768));
+    line-height: calc(37px + (100vw - 768px) * (69 - 37) / (1439 - 768));
+    
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: calc(24px + (100vw - 320px) * (33 - 24) / (767 - 320));
+    line-height: calc(29px + (100vw - 320px) * (37 - 29) / (767 - 320));
+  }
+  
+  @media screen and (max-width: 319px) {
+    font-size: 24px;
+    line-height: 29px;
+  }  
 }
 
 @mixin h2() {
-    font-weight: $h2-font-weight;
-    font-size: $h2-font-size;
-    line-height: $h2-line-height;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 68px;
+
+  @media screen and (max-width: 1439px) {
+    font-size: calc(33px + (100vw - 768px) * (60 - 33) / (1439 - 768));
+    line-height: calc(37px + (100vw - 768px) * (68 - 37) / (1439 - 768));
+    
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: calc(26px + (100vw - 320px) * (33 - 26) / (767 - 320));
+    line-height: calc(31.5px + (100vw - 320px) * (37 - 31.5) / (767 - 320));
+  }
+  
+  @media screen and (max-width: 319px) {
+    font-size: 26px;
+    line-height: 31.5px;
+  }  
+ 
 }
 
 @mixin h3() {
-    font-weight: $h3-font-weight;
-    font-size: $h3-font-size;
-    line-height: $h3-line-height;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+
+  @media screen and (max-width: 1439px) {
+    font-size: calc(26px + (100vw - 768px) * (32 - 26) / (1439 - 768));
+    line-height: calc(31.5px + (100vw - 768px) * (38 - 31.5) / (1439 - 768));
+  }
+  
+  @media screen and (max-width: 767px) {
+    font-size: 26px;
+    line-height: 31.5px;
+  }  
+
 }
 
-@mixin h5() {
-    font-weight: $h5-font-weight;
-    font-size: $h5-font-size;
-    line-height: $h5-line-height;
+@mixin h4() {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+
+  @media screen and (max-width: 1439px) {
+    font-size: calc(15px + (100vw - 768px) * (18 - 20) / (1439 - 768));
+  }
+  
+  @media screen and (max-width: 767px) {
+    font-size: 15px;
+  }  
+
 }
 
 @mixin text-xl() {
-    font-weight: $text-xl-font-weight;
-    font-size: $text-xl-font-size;
-    line-height: $text-xl-line-height;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media screen and (max-width: 1439px) {
+    font-size: calc(15px + (100vw - 768px) * (18 - 15) / (1439 - 768));
+    line-height: calc(20px + (100vw - 768px) * (26 - 20) / (1439 - 768));
+    
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: calc(12px + (100vw - 320px) * (15 - 12) / (767 - 320));
+    line-height: calc(14.5px + (100vw - 320px) * (20 - 14.5) / (767 - 320));
+  }
+  
+  @media screen and (max-width: 319px) {
+    font-size: 12px;
+    line-height: 14.5px;
+  }
+
 }
 
 @mixin text() {
-    font-weight: $text-font-weight;
-    font-size: $text-font-size;
-    line-height: $text-line-height;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media screen and (max-width: 1439px) {
+    font-size: calc(15px + (100vw - 768px) * (16 - 15) / (1439 - 768));
+    line-height: calc(20px + (100vw - 768px) * (24 - 20) / (1439 - 768));
+    
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 15px;
+    line-height: 20px;  }
+  
+
 }

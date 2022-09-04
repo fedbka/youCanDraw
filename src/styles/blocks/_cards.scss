@@ -20,7 +20,7 @@
   }
 
   &__item-subtitle {
-    @include h5();
+    @include h4();
     margin: 0;
     padding: 0;
     opacity: .6;

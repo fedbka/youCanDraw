@@ -16,7 +16,6 @@
     max-width: 1100px;
     padding-top: 30px;
     width: 100%;
-    min-height: 640px;
     position: relative;    
   }
 
@@ -61,5 +60,122 @@
     color: $lt-background-dark;
     border-radius: 8px;
     margin-top: 106px;
+    margin-bottom: 130px;
   }
+}
+
+@media screen and (max-width: 1219px) {
+  
+  .header {
+
+    &__content {
+      max-width: calc(100vw - 120px);
+    }
+
+    &__title {
+      padding-top: calc(50px + (100vw - 768px) * (60 - 50) / (1219 - 768));
+      max-width: calc(360px + (100vw - 768px) * (650 - 360) / (1219 - 768));
+      padding-bottom: calc(20px + (100vw - 768px) * (30 - 20) / (1219 - 768));
+    }
+
+    &__subtitle {
+      max-width: calc(360px + (100vw - 768px) * (450 - 360) / (1219 - 768));
+    }
+
+    &__image {
+      max-width: calc(250px + (100vw - 768px) * (311 - 250) / (1219 - 768));
+      top: calc(40px + (1219px - 100vw) * (120 - 40) / (1219 - 768));
+      right: calc(-5px + (100vw - 768px) * (60) / (1219 - 768));
+    }
+
+    &__link {
+      margin-top: calc(106px + (1219px - 100vw) * (250 - 106) / (1219 - 768));
+      margin-bottom: calc(50px + (100vw - 768px) * (130 - 50) / (1219 - 768));
+      height: calc(48px + (100vw - 768px) * (54 - 48) / (1219 - 768));
+    }
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  
+  .header {
+
+    &__content {
+      max-width: calc(100vw - (60px + (100vw - 707px) * (120 - 60) / (767 - 707)));
+      padding-top: calc(20px + (100vw - 320px) * (30 - 20) / (767 - 320));
+    }
+
+    &__title {
+      max-width: 360px;
+    }  
+
+    &__subtitle {
+      max-width: calc(260px + (100vw - 768px) * (360 - 260) / (1219 - 768));
+    }    
+
+    &__image {
+      right: 0;
+    } 
+
+    &__link {
+      margin-top: calc(250px + (767px - 100vw) * (450 - 250) / (767 - 320));
+      margin-bottom: calc(20px + (100vw - 320px) * (50 - 20) / (767 - 320));
+    }    
+  }
+
+}
+
+@media screen and (max-width: 707px) {
+
+  .header {
+
+    &__content {
+      max-width: calc(100vw - 60px);
+    }
+
+  }
+  
+}
+
+@media screen and (max-width: 456px) {
+
+  .header {
+
+    &__title {
+      max-width: unset;
+      width: 100%;
+    }
+    &__subtitle {
+      width: 100%;
+      max-width: unset;
+    }  
+
+    &__image {
+      position: static;
+      top: unset;
+      right: unset;
+      margin: 0 auto;
+      padding: 0;
+      padding-top: 50px;
+    }
+
+    &__link {
+      margin: 50px auto 20px;
+      width: calc(240px + (100vw - 320px) * (260 - 240) / (456 - 320));
+    }
+
+  }
+  
+}
+
+@media screen and (max-width: 320px) {
+
+  .header {
+
+    &__link {
+      width: 260px;
+    }
+  }
+  
 }
