@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  align-items: center;
+  align-items: flex-start;
 
   &__item {
     box-sizing: border-box;
