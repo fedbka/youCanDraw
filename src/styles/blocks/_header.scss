@@ -48,7 +48,7 @@
   }
 
   &__link {
-    @include text();
+    @include h4();
     font-weight: 600;
     width: 240px;
     height: 54px;
@@ -100,6 +100,7 @@
 @media screen and (max-width: 767px) {
   
   .header {
+    border-radius: calc(10px + (100vw - 320px) * (20 - 10) / (767 - 320));
 
     &__content {
       max-width: calc(100vw - (60px + (100vw - 707px) * (120 - 60) / (767 - 707)));
@@ -108,6 +109,8 @@
 
     &__title {
       max-width: 360px;
+      padding-top: 50px;
+      padding-bottom: calc(14px + (100vw - 320px) * (20 - 14) / (767 - 320));
     }  
 
     &__subtitle {
@@ -116,6 +119,7 @@
 
     &__image {
       right: 0;
+      max-width: calc(260px - (100vw - 320px) * (260 - 250) / (767 - 320));
     } 
 
     &__link {
@@ -138,7 +142,14 @@
   
 }
 
-@media screen and (max-width: 456px) {
+@media screen and (max-width: 552px) {
+  .header {
+
+
+  }
+}
+
+@media screen and (max-width: 555px) {
 
   .header {
 
@@ -157,12 +168,12 @@
       right: unset;
       margin: 0 auto;
       padding: 0;
-      padding-top: 50px;
+      padding-top: 50px;      
     }
 
     &__link {
-      margin: 50px auto 20px;
-      width: calc(240px + (100vw - 320px) * (260 - 240) / (456 - 320));
+      margin: 48px auto 20px;
+      width: calc(240px + (100vw - 320px) * (260 - 240) / (555 - 320));
     }
 
   }
@@ -175,6 +186,10 @@
 
     &__link {
       width: 260px;
+    }
+
+    &__image {
+      max-width: 260px;
     }
   }
   

@@ -68,7 +68,7 @@
 
 }
 
-@mixin h4() {
+@mixin h5() {
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
@@ -79,6 +79,21 @@
   
   @media screen and (max-width: 767px) {
     font-size: 15px;
+  }  
+
+}
+
+@mixin h4() {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media screen and (max-width: 1439px) {
+    font-size: 14px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
   }  
 
 }
