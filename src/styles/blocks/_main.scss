@@ -21,3 +21,17 @@
     box-sizing: border-box;
   }
 }
+
+@media screen and (max-width: 1439px) {
+  .main {
+
+    &__content {
+        
+    }
+
+    &__heading {
+      padding: calc(40px + (100vw - 768px) * (90 - 40) / (1439 - 768)) 0 30px;
+      width: calc(100vw - 120px);
+    }
+  }  
+}

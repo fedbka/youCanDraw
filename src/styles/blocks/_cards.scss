@@ -23,7 +23,7 @@
     @include h5();
     margin: 0;
     padding: 0;
-    opacity: .6;
+    opacity: 0.6;
   }
 
   &__item-title {
@@ -32,15 +32,33 @@
     padding: 0;
     padding-bottom: 20px;
     max-width: 460px;
-    min-height: 76px; 
- }
+    min-height: 76px;
+  }
 
   &__item-text {
     @include text();
     margin: 0;
     padding: 0;
-    opacity: .6;
+    opacity: 0.6;
     max-width: 460px;
   }
- 
+}
+
+@media screen and (max-width: 1439px) {
+  .cards {
+    margin-top: calc(30px - (100vw - 768px) * (30 - 20) / (1439 - 768));
+    gap: calc(10px + (100vw - 768px) * (20 - 10) / (1439 - 768));
+    max-width: calc(100vw - 60px);
+
+    &__item {
+      padding: calc(30px + (100vw - 768px) * (40 - 30) / (1439 - 768));
+      max-height: 308px;
+      min-height: calc(284px + (100vw - 768px) * (308 - 284) / (1439 - 768));
+      gap: calc(12px + (100vw - 768px) * (20 - 12) / (1439 - 768));
+    }
+
+    &__item-title {
+      padding-bottom: 23px;
+   }
+  }
 }
