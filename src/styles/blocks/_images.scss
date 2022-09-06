@@ -21,7 +21,9 @@
 
 @media screen and (max-width: 1439px) {
     .images {
-
+        padding-top: calc(40px + (100vw - 768px) * (90 - 40) / (1439 - 768));
+        padding-bottom: calc(38px + (100vw - 768px) * (96 - 38) / (1439 - 768));
+        gap: calc(15px + (100vw - 768px) * (25 - 10) / (1439 - 768));
         &__image {
             max-width: calc(226px + ((100vw - 768px) * (350 - 226) / (1439 - 768)));
         }

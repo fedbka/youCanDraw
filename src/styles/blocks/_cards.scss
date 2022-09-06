@@ -46,7 +46,7 @@
 
 @media screen and (max-width: 1439px) {
   .cards {
-    margin-top: calc(30px - (100vw - 768px) * (30 - 20) / (1439 - 768));
+    margin-top: calc(31px - (100vw - 768px) * (31 - 20) / (1439 - 768));
     gap: calc(10px + (100vw - 768px) * (20 - 10) / (1439 - 768));
     max-width: calc(100vw - 60px);
 

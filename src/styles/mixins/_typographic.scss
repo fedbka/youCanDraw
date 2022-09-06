@@ -5,7 +5,6 @@
   @return calc(#{$k} * 100vw + #{$b});
 }
 
-
 @mixin h1() {
   font-weight: 700;
   font-size: 60px;
@@ -14,18 +13,17 @@
   @media screen and (max-width: 1439px) {
     font-size: calc(33px + (100vw - 768px) * (60 - 33) / (1439 - 768));
     line-height: calc(37px + (100vw - 768px) * (69 - 37) / (1439 - 768));
-    
   }
 
   @media screen and (max-width: 767px) {
     font-size: calc(24px + (100vw - 320px) * (33 - 24) / (767 - 320));
     line-height: calc(29px + (100vw - 320px) * (37 - 29) / (767 - 320));
   }
-  
+
   @media screen and (max-width: 319px) {
     font-size: 24px;
     line-height: 29px;
-  }  
+  }
 }
 
 @mixin h2() {
@@ -36,19 +34,17 @@
   @media screen and (max-width: 1439px) {
     font-size: calc(33px + (100vw - 768px) * (60 - 33) / (1439 - 768));
     line-height: calc(37px + (100vw - 768px) * (68 - 37) / (1439 - 768));
-    
   }
 
   @media screen and (max-width: 767px) {
     font-size: calc(26px + (100vw - 320px) * (33 - 26) / (767 - 320));
     line-height: calc(31.5px + (100vw - 320px) * (37 - 31.5) / (767 - 320));
   }
-  
+
   @media screen and (max-width: 319px) {
     font-size: 26px;
     line-height: 31.5px;
-  }  
- 
+  }
 }
 
 @mixin h3() {
@@ -60,12 +56,11 @@
     font-size: calc(26px + (100vw - 768px) * (32 - 26) / (1439 - 768));
     line-height: calc(31.5px + (100vw - 768px) * (38 - 31.5) / (1439 - 768));
   }
-  
+
   @media screen and (max-width: 767px) {
     font-size: 26px;
     line-height: 31.5px;
-  }  
-
+  }
 }
 
 @mixin h5() {
@@ -76,11 +71,10 @@
   @media screen and (max-width: 1439px) {
     font-size: calc(15px + (100vw - 768px) * (18 - 20) / (1439 - 768));
   }
-  
+
   @media screen and (max-width: 767px) {
     font-size: 15px;
-  }  
-
+  }
 }
 
 @mixin h4() {
@@ -91,11 +85,10 @@
   @media screen and (max-width: 1439px) {
     font-size: 14px;
   }
-  
+
   @media screen and (max-width: 767px) {
     font-size: 12px;
-  }  
-
+  }
 }
 
 @mixin text-xl() {
@@ -106,19 +99,17 @@
   @media screen and (max-width: 1439px) {
     font-size: calc(15px + (100vw - 768px) * (18 - 15) / (1439 - 768));
     line-height: calc(20px + (100vw - 768px) * (26 - 20) / (1439 - 768));
-    
   }
 
   @media screen and (max-width: 767px) {
     font-size: calc(12px + (100vw - 320px) * (15 - 12) / (767 - 320));
     line-height: calc(14.5px + (100vw - 320px) * (20 - 14.5) / (767 - 320));
   }
-  
+
   @media screen and (max-width: 319px) {
     font-size: 12px;
     line-height: 14.5px;
   }
-
 }
 
 @mixin text() {
@@ -129,12 +120,24 @@
   @media screen and (max-width: 1439px) {
     font-size: calc(15px + (100vw - 768px) * (16 - 15) / (1439 - 768));
     line-height: calc(20px + (100vw - 768px) * (24 - 20) / (1439 - 768));
-    
   }
 
   @media screen and (max-width: 767px) {
     font-size: 15px;
-    line-height: 20px;  }
-  
+    line-height: 20px;
+  }
+}
 
+@mixin text-placeholder() {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media screen and (max-width: 767px) {
+    font-size: calc(12px + (100vw - 768px) * (16 - 12) / (767 - 320));
+  }
+
+  @media screen and (max-width: 320px) {
+    font-size: 12px;
+  }
 }
