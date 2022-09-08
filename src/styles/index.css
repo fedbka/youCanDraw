@@ -249,7 +249,7 @@
 
 @media screen and (max-width: 1439px) {
   .main__heading {
-    padding: calc(40px + (100vw - 768px) * 50 / 671) 0 30px;
+    padding: calc(41px + (100vw - 768px) * 49 / 671) 0 30px;
     width: calc(100vw - 120px);
   }
 }
@@ -260,13 +260,12 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  align-items: flex-start;
 }
 .cards__item {
   box-sizing: border-box;
   background-color: #f8f8f8;
-  max-width: 540px;
-  min-height: 308px;
+  width: 540px;
+  height: 308px;
   border-radius: 20px;
   padding: 40px 40px;
   display: flex;
@@ -280,10 +279,15 @@
   margin: 0;
   padding: 0;
   opacity: 0.6;
+  width: 100%;
+  height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 @media screen and (max-width: 1439px) {
   .cards__item-subtitle {
-    font-size: calc(15px + (100vw - 768px) * -2 / 671);
+    font-size: calc(15px + (100vw - 768px) * 3 / 671);
   }
 }
 @media screen and (max-width: 767px) {
@@ -296,10 +300,10 @@
   font-size: 32px;
   line-height: 38px;
   margin: 0;
-  padding: 0;
-  padding-bottom: 20px;
-  max-width: 460px;
-  min-height: 76px;
+  width: 100%;
+  height: 96px;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 @media screen and (max-width: 1439px) {
   .cards__item-title {
@@ -320,7 +324,10 @@
   margin: 0;
   padding: 0;
   opacity: 0.6;
-  max-width: 460px;
+  width: 100%;
+  max-height: 80px;
+  flex-grow: 1;
+  overflow: hidden;
 }
 @media screen and (max-width: 1439px) {
   .cards__item-text {
@@ -335,20 +342,20 @@
   }
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1160px) {
   .cards {
-    margin-top: calc(31px - (100vw - 768px) * 11 / 671);
-    gap: calc(10px + (100vw - 768px) * 10 / 671);
+    margin-top: calc(30px - (100vw - 768px) * 10 / 392);
+    gap: calc(10px + (100vw - 768px) * 10 / 392);
     max-width: calc(100vw - 60px);
   }
   .cards__item {
-    padding: calc(30px + (100vw - 768px) * 10 / 671);
-    max-height: 308px;
-    min-height: calc(284px + (100vw - 768px) * 24 / 671);
-    gap: calc(12px + (100vw - 768px) * 8 / 671);
+    padding: calc(30px + (100vw - 768px) * 10 / 392);
+    width: calc(349px + (100vw - 768px) * 234 / 392);
+    height: calc(284px + (100vw - 768px) * 24 / 392);
+    gap: calc(14px + (100vw - 768px) * 8 / 392);
   }
-  .cards__item-title {
-    padding-bottom: 23px;
+  .cards__title {
+    height: 100px;
   }
 }
 .images {
