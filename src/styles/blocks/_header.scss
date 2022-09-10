@@ -27,8 +27,7 @@
     @include h1();
     margin: 0;
     max-width: 650px;
-    padding-top: 60px;
-    padding-bottom: 30px;
+    padding: 60px 0 30px;
   }
 
   &__subtitle {
@@ -140,13 +139,6 @@
 
   }
   
-}
-
-@media screen and (max-width: 552px) {
-  .header {
-
-
-  }
 }
 
 @media screen and (max-width: 555px) {

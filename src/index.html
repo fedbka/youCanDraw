@@ -26,52 +26,89 @@
                 <li class="cards__item">
                     <p class="cards__item-subtitle">AI</p>
                     <h3 class="cards__item-title">Умный интелект приложения</h3>
-                    <p class="cards__item-text">С&nbsp;помощью&nbsp;AI приложение анализирует картины мастеров и&nbsp;современных практиков рисования, и&nbsp;достраивает картину за&nbsp;вас.</p>
+                    <p class="cards__item-text">С&nbsp;помощью&nbsp;AI приложение анализирует картины мастеров
+                        и&nbsp;современных практиков рисования, и&nbsp;достраивает картину за&nbsp;вас.</p>
                 </li>
-                <li class="cards__item">
+                <li class="cards__item cards__item_mobile_hidden">
                     <p class="cards__item-subtitle">Ч/Б и цвет</p>
                     <h3 class="cards__item-title">Рисуйте в&nbsp;любом стиле</h3>
-                    <p class="cards__item-text">Будь то&nbsp;карандашная каляка-маляка или цветное произведение, приложение поможет в&nbsp;любой ситуации.</p>
+                    <p class="cards__item-text">Будь то&nbsp;карандашная каляка-маляка или цветное произведение,
+                        приложение поможет в&nbsp;любой ситуации.</p>
                 </li>
             </ul>
-            <h2 class="main__heading">Чик-чирик и&nbsp;ваша каляка превращается в&nbsp;изумительное произведение искусства.</h2>
+            <ul class="slider slider_under_cards">
+                <li>
+                    <button class="slider__button slider__button_current" type="button"></button>
+                </li>
+                <li>
+                    <button class="slider__button" type="button"></button>
+                </li>
+            </ul>            
+            <h2 class="main__heading">Чик-чирик и&nbsp;ваша каляка превращается в&nbsp;изумительное произведение
+                искусства.</h2>
             <ul class="images">
                 <li class="images__item">
-                     <img class="images__image" src="./images/face-on-mobile-first.png"
+                    <img class="images__image" src="./images/face-on-mobile-first.png"
                         alt="Каляка-маляка лица на экране смартфона">
                 </li>
-                <li class="images__item"><img class="images__image" src="./images/face-on-mobile-second.png"
+                <li class="images__item images__item_hide-on-mobile"><img class="images__image" src="./images/face-on-mobile-second.png"
                         alt="Каляка-маляка лица на экране смартфона">
-               </li>
-                <li class="images__item"><img class="images__image" src="./images/face-on-mobile-third.png"
+                </li>
+                <li class="images__item images__item_hide-on-mobile"><img class="images__image" src="./images/face-on-mobile-third.png"
                         alt="Каляка-маляка лица на экране смартфона">
+                </li>
+            </ul>
+            <ul class="slider slider_under_images">
+                <li>
+                    <button class="slider__button slider__button_current" type="button"></button>
+                </li>
+                <li>
+                    <button class="slider__button" type="button"></button>
+                </li>
+                <li>
+                    <button class="slider__button" type="button"></button>
                 </li>
             </ul>
             <ul class="cards">
                 <li class="cards__item">
                     <p class="cards__item-subtitle">Быстро</p>
                     <h3 class="cards__item-title">Проблем с рисованием — нет</h3>
-                    <p class="cards__item-text">Рисуйте в&nbsp;приложении доступными кистями: карандаш, маркер, линер, масляная кисть и&nbsp;многие другие...
+                    <p class="cards__item-text">Рисуйте в&nbsp;приложении доступными кистями: карандаш, маркер, линер,
+                        масляная кисть и&nbsp;многие другие...
                     </p>
                 </li>
-                <li class="cards__item">
+                <li class="cards__item cards__item_mobile_hidden">
                     <p class="cards__item-subtitle">Просто</p>
                     <h3 class="cards__item-title">Нарисовали, преобразовали, сохранили</h3>
                     <p class="cards__item-text">Раз, два, три, больше нечего тут рассказать.</p>
                 </li>
             </ul>
-            <h2 class="main__heading">Качайте приложение и&nbsp;улучшайте свои художества, а&nbsp;потом хвастайтесь ими!</h2>
+            <ul class="slider slider_under_cards">
+                <li>
+                    <button class="slider__button slider__button_current" type="button"></button>
+                </li>
+                <li>
+                    <button class="slider__button" type="button"></button>
+                </li>
+            </ul>
+            <h2 class="main__heading">Качайте приложение и&nbsp;улучшайте свои художества, а&nbsp;потом хвастайтесь ими!
+            </h2>
             <form class="form" action="submit">
-                <h3 class="form__title">Хотите нам что-то посоветовать?</h3>
-                <p class="form__subtitle">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами.</p>
-                <fieldset class="form__fieldset">
-                    <input class="form__input" type="text" name="username" id="username" placeholder="Ваше Имя" required>
-                    <input class="form__input" type="email" name="email" id="email" placeholder="Контактный Email" required>
-                   </fieldset>
-                <fieldset class="form__fieldset">
-                    <textarea class="form__input form__input_textarea" name="message" id="message" cols="30" rows="4" placeholder="Сообщение" required></textarea>
-                </fieldset>
-                <button class="form__button">Оставить заявку</button>
+                <div class="form__content">
+                    <h3 class="form__title">Хотите нам что-то посоветовать?</h3>
+                    <p class="form__subtitle">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами.</p>
+                    <fieldset class="form__fieldset">
+                        <input class="form__input" type="text" name="username" id="username" placeholder="Ваше Имя"
+                            required>
+                        <input class="form__input" type="email" name="email" id="email" placeholder="Контактный Email"
+                            required>
+                    </fieldset>
+                    <fieldset class="form__fieldset">
+                        <textarea class="form__input form__input_textarea" name="message" id="message" cols="30"
+                            rows="4" placeholder="Сообщение" required></textarea>
+                    </fieldset>
+                    <button class="form__button" type="submit">Оставить заявку</button>
+                </div>
             </form>
         </div>
     </main>

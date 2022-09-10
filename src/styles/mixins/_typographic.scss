@@ -127,7 +127,7 @@
   line-height: 24px;
 
   @media screen and (max-width: 767px) {
-    font-size: calc(12px + (100vw - 768px) * (16 - 12) / (767 - 320));
+    font-size: calc(12px + (100vw - 320px) * (16 - 12) / (767 - 320));
   }
 
   @media screen and (max-width: 320px) {

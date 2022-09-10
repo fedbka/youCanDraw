@@ -24,14 +24,20 @@
 
 @media screen and (max-width: 1439px) {
   .main {
-
-    &__content {
-        
-    }
-
+    
     &__heading {
       padding: calc(41px + (100vw - 768px) * (90 - 41) / (1439 - 768)) 0 30px;
       width: calc(100vw - 120px);
+    }
+  }  
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    
+    &__heading {
+      padding: 66px 0 30px;
+      width: calc(100vw - 60px);
     }
   }  
 }

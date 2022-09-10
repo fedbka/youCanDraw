@@ -1,0 +1,49 @@
+.slider {
+  list-style-type: none;
+  display: none;
+  gap: 4px;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: center;
+  width: 100%;
+
+  &__button {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: opacity 0.1s linear;
+    box-sizing: border-box;
+    width: 4px;
+    height: 4px;
+    background-image: url("/src/images/ellipse-grey.svg");
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
+    }
+
+    &_current {
+      background-image: url("/src/images/ellipse-black.svg");
+    }
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .slider {
+    &_under_cards {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+    .slider {
+      &_under_images {
+        display: flex;
+        margin-bottom: 40px;
+      }
+    }
+  }
