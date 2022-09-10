@@ -1,24 +1,27 @@
 .slider {
-  list-style-type: none;
-  display: none;
-  gap: 4px;
-  margin: 0 auto;
-  padding: 0;
-  justify-content: center;
-  width: 100%;
+
+  &__buttons {
+    display: none;
+    gap: 4px;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
 
   &__button {
+    background-color: transparent;
+    background-image: url("../images/ellipse-grey.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: none;
+    box-sizing: border-box;
+    height: 4px;
     margin: 0;
     padding: 0;
-    background-color: transparent;
-    border: none;
-    background-repeat: no-repeat;
-    background-position: center center;
     transition: opacity 0.1s linear;
-    box-sizing: border-box;
     width: 4px;
-    height: 4px;
-    background-image: url("/src/images/ellipse-grey.svg");
 
     &:hover {
       cursor: pointer;
@@ -26,24 +29,45 @@
     }
 
     &_current {
-      background-image: url("/src/images/ellipse-black.svg");
+      background-image: url("../images/ellipse-black.svg");
     }
   }
 }
 
-@media screen and (max-width: 544px) {
+@media screen and (max-width: $resolution-slider-display-under-cards) {
   .slider {
-    &_under_cards {
-      display: flex;
+    &__item {
+
+      &_hidden-item-type_card {
+        display: none;
+      }
+
+    }
+
+    &__buttons {
+      &_under_cards {
+        display: flex;
+      }
     }
   }
 }
 
-@media screen and (max-width: 767px) {
-    .slider {
+@media screen and (max-width: $resolution-slider-display-under-images) {
+  .slider {
+
+    &__item {
+
+      &_hidden-item-type_image {
+        display: none;
+      }
+
+    }
+
+    &__buttons {
       &_under_images {
         display: flex;
         margin-bottom: 40px;
       }
     }
   }
+}

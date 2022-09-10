@@ -1,9 +1,9 @@
 .page {
   background-color: $background;
-  font-family: $font-family;
   color: $text-color-dark;
   display: flex;
   flex-direction: column;
+  font-family: $font-family;
   min-height: 100vh;
   text-rendering: optimizeLegibility;
 }
