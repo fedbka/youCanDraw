@@ -120,6 +120,9 @@
     font-size: 12px;
   }
 }
+.header__link:hover {
+  opacity: 0.93;
+}
 
 @media screen and (max-width: 1219px) {
   .header__content {
@@ -528,6 +531,17 @@
     font-size: 12px;
   }
 }
+.form__input:hover {
+  border: 1px solid #E4E4E4;
+}
+.form__input:active {
+  border: 1px solid #E4E4E4;
+  outline: none;
+}
+.form__input:focus {
+  border: 1px solid #E4E4E4;
+  outline: none;
+}
 .form__input_textarea {
   min-width: unset;
   min-height: 130px;
@@ -560,6 +574,10 @@
   .form__button {
     font-size: 12px;
   }
+}
+.form__button:hover {
+  opacity: 0.85;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1439px) {
@@ -788,6 +806,9 @@
   .footer__link {
     font-size: 12px;
   }
+}
+.footer__link:hover {
+  opacity: 0.93;
 }
 
 @media screen and (max-width: 1219px) {

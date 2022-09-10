@@ -8,7 +8,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;    
+  align-items: center;
 
   &__title {
     @include h3();
@@ -50,10 +50,25 @@
     min-height: 54px;
     padding: 15px 20px 15px;
 
+    &:hover {
+      border: 1px solid #E4E4E4;
+    }
+
+    &:active {
+      border: 1px solid #E4E4E4;
+      outline: none;
+    }
+
+    &:focus {
+      border: 1px solid #E4E4E4;
+      outline: none;
+    }
+
+
     &_textarea {
-        min-width: unset;
-        min-height: 130px;
-        resize: none;
+      min-width: unset;
+      min-height: 130px;
+      resize: none;
     }
   }
 
@@ -72,6 +87,11 @@
     border-radius: 8px;
     margin-top: 9px;
     margin-left: auto;
+
+    &:hover {
+      opacity: 0.85;
+      cursor: pointer;
+    }
   }
 }
 
@@ -90,32 +110,31 @@
     max-width: calc(100vw - 60px);
     padding: calc(26px + (100vw - 768px) * (60 - 26) / (1160 - 768))
       calc(30px + (100vw - 768px) * (60 - 30) / (1160 - 768))
-      calc(30px + (100vw - 768px) * (60 - 30) / (1160 - 768));    
+      calc(30px + (100vw - 768px) * (60 - 30) / (1160 - 768));
 
     &__fieldset {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
     }
 
     &__input {
-        width: 100%;
-        max-width: 470px;
+      width: 100%;
+      max-width: 470px;
     }
 
     &__textarea {
-        width: 100%;
-        max-width: 470px;
+      width: 100%;
+      max-width: 470px;
     }
 
     &__button {
-        align-self: unset;
-        max-width: 470px;
-        width: 100%;
-        height: 48px;
-        margin: 30px auto 0;
-
+      align-self: unset;
+      max-width: 470px;
+      width: 100%;
+      height: 48px;
+      margin: 30px auto 0;
     }
   }
 }
@@ -138,7 +157,6 @@
       height: 44px;
     }
   }
-  
 }
 
 @media screen and (max-width: 747px) {
@@ -151,15 +169,15 @@
       padding: 0 0 20px;
       margin: 0 auto;
       width: 100%;
-      min-width: unset;      
+      min-width: unset;
     }
 
     &__subtitle {
       margin: 0 auto;
       width: 100%;
-      min-width: unset; 
-      text-align: center;     
-    }    
+      min-width: unset;
+      text-align: center;
+    }
 
     &__input {
       width: 100%;
@@ -170,13 +188,12 @@
       margin: 29px auto 0;
       width: 100%;
       min-width: unset;
-    }    
+    }
   }
-  
 }
 
 @media screen and (max-width: 544px) {
   .form {
-    margin-top: 35px;  
+    margin-top: 35px;
   }
 }
