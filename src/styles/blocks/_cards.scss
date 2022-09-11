@@ -1,0 +1,101 @@
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  list-style-type: none;
+  margin: 20px auto 30px;
+  padding: 0;
+
+  &__item {
+    background-color: $lt-background-light-less;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 540px;
+    min-height: 308px;
+    padding: 40px 40px;
+  }
+
+  &__item-subtitle {
+    @include h5();
+    margin: 0;
+    height: 20px;
+    opacity: 0.6;
+    overflow: hidden;
+    padding: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  &__item-title {
+    @include h3();
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 96px;
+    width: 100%;
+  }
+
+  &__item-text {
+    @include text();
+    margin: 0;
+    min-height: 70px;
+    opacity: 0.6;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .cards {
+    margin-top: calc(30px - (100vw - 768px) * (30 - 20) / (1160 - 768));
+    gap: calc(10px + (100vw - 768px) * (20 - 10) / (1160 - 768));
+    max-width: calc(100vw - 60px);
+
+    &__item {
+      padding: calc(30px + (100vw - 768px) * (40 - 30) / (1160 - 768));
+      max-width: calc(349px + (100vw - 768px) * (540 - 306) / (1160 - 768));
+      min-height: calc(284px + (100vw - 768px) * (308 - 284) / (1160 - 768));
+      gap: calc(12px + (100vw - 768px) * (20 - 12) / (1160 - 768));
+    }
+
+    &__title {
+      min-height: 100px;
+    }
+
+    &__item-text {
+      padding: 3px 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cards {
+    max-width: calc(100vw - 20px);
+    width: 100%;
+    gap: 10px;
+    margin-top: 30px;
+
+    &__item {
+      padding: calc(20px + (100vw - 320px) * (30 - 20) / (767 - 320));
+      max-width: 349px;
+      min-height: 284px;
+      gap: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: $resolution-slider-display-under-cards) {
+  .cards {
+    margin-bottom: 9px;
+    justify-content: center;
+
+    &__item {
+      &_mobile_hidden {
+        display: none;
+      }
+    }
+  }
+}

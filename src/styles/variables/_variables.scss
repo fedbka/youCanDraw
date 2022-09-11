@@ -1,0 +1,104 @@
+// Fonts
+$font-family: "Inter", Arial, sans-serif;
+
+// light theme ('lt-' prefix)
+$lt-text-color-dark: #111111;
+$lt-text-color-dark-less: rgba(17, 17, 17, 0.6);
+$lt-text-color-light: #ffffff;
+$lt-text-color-light-less: rgba(255, 255, 255, 0.7);
+
+$lt-background-light: #ffffff;
+$lt-background-light-less: #f8f8f8;
+$lt-background-dark: #222222;
+
+// dark theme ('dt' prefix)
+// for future purpose
+
+$background:$lt-background-light;
+$background-dark: $lt-background-dark;
+$text-color-dark: $lt-text-color-dark;
+$text-color-light: $lt-text-color-light;
+
+// Typographic
+// 
+// H1
+$h1-desktop-font-weight: 700;
+$h1-desktop-font-size: 60px;
+$h1-desktop-line-height: 69px;
+
+$h1-tablet-font-weight: 700;
+$h1-tablet-font-size: 33px;
+$h1-tablet-line-height: 37px;
+
+$h1-tablet-font-weight: 700;
+$h1-tablet-font-size: 24px;
+$h1-tablet-line-height: 29px;
+
+// H2
+$h2-desktop-font-weight: 600;
+$h2-desktop-font-size: 60px;
+$h2-desktop-line-height: 68px;
+
+$h2-tablet-font-weight: 600;
+$h2-tablet-font-size: 33px;
+$h2-tablet-line-height: 37px;
+
+$h2-mobile-font-weight: 600;
+$h2-mobile-font-size: 26px;
+$h2-mobile-line-height: 31.5px;
+
+// H3
+$h3-desktop-font-weight: 600;
+$h3-desktop-font-size: 32px;
+$h3-desktop-line-height: 38px;
+
+$h3-tablet-font-weight: 600;
+$h3-tablet-font-size: 26px;
+$h3-tablet-line-height: 31.5px;
+
+$h3-mobile-font-weight: 600;
+$h3-mobile-font-size: 26px;
+$h3-mobile-line-height: 31.5px;
+
+// H4
+$h4-desktop-font-weight: 500;
+$h4-desktop-font-size: 18px;
+$h4-desktop-line-height: 20px;
+
+$h4-tablet-font-weight: 500;
+$h4-tablet-font-size: 15px;
+$h4-tablet-line-height: 20px;
+
+$h4-mobile-font-weight: 500;
+$h4-mobile-font-size: 18px;
+$h4-mobile-line-height: 20px;
+
+// text-xl
+$text-desktop-xl-font-weight: 400;
+$text-desktop-xl-font-size: 18px;
+$text-desktop-xl-line-height: 26px;
+
+$text-tablet-xl-font-weight: 400;
+$text-tablet-xl-font-size: 15px;
+$text-tablet-xl-line-height: 20px;
+
+$text-mobile-xl-font-weight: 400;
+$text-mobile-xl-font-size: 12px;
+$text-mobile-xl-line-height: 14.5px;
+
+// text
+$text-desktop-font-weight: 400;
+$text-desktop-font-size: 16px;
+$text-desktop-line-height: 24px;
+
+$text-tablet-font-weight: 400;
+$text-tablet-font-size: 15px;
+$text-tablet-line-height: 20px;
+
+$text-mobile-font-weight: 400;
+$text-mobile-font-size: 15px;
+$text-mobile-line-height: 20px;
+
+
+$resolution-slider-display-under-cards: 555px;
+$resolution-slider-display-under-images: 767px;

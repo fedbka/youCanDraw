@@ -1,0 +1,88 @@
+.slider {
+
+  &__item {
+
+    &_type_hidden {
+      display: none;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+
+    &_type_images {
+      display: none;
+    }
+
+    &_type_cards {
+      display: none;
+    }    
+  }
+
+  &__button {
+    background-color: transparent;
+    background-image: url("../images/ellipse-grey.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: none;
+    box-sizing: border-box;
+    height: 4px;
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.1s linear;
+    width: 4px;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
+    }
+
+    &_type_current {
+      background-image: url("../images/ellipse-black.svg");
+    }
+  }
+}
+
+@media screen and (max-width: $resolution-slider-display-under-cards) {
+  .slider {
+    &__item {
+
+      &_type_hidden-card {
+        display: none;
+      }
+
+    }
+
+    &__buttons {
+      &_type_cards {
+        display: flex;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $resolution-slider-display-under-images) {
+  .slider {
+
+    &__item {
+
+      &_type_hidden-image {
+        display: none;
+      }
+
+    }
+
+    &__buttons {
+      &_type_images {
+        display: flex;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
