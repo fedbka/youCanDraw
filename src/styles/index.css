@@ -190,7 +190,7 @@
   }
   .header__link {
     margin: 48px auto 20px;
-    width: calc(240px + (100vw - 320px) * 20 / 235);
+    width: 100%;
   }
 }
 .main {
@@ -401,6 +401,9 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .images {
+    justify-content: center;
+  }
   .images__image {
     padding-top: calc(30px + (100vw - 320px) * 10 / 447);
     max-width: 260px;
@@ -492,7 +495,7 @@
     font-size: calc(12px + (100vw - 320px) * 4 / 447);
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 319px) {
   .form__input {
     font-size: 12px;
   }
@@ -761,7 +764,7 @@
     font-size: calc(12px + (100vw - 320px) * 4 / 447);
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 319px) {
   .footer__link {
     font-size: 12px;
   }

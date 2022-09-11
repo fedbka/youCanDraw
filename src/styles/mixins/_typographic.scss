@@ -130,7 +130,7 @@
     font-size: calc(12px + (100vw - 320px) * (16 - 12) / (767 - 320));
   }
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 319px) {
     font-size: 12px;
   }
 }
