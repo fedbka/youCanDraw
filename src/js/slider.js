@@ -1,34 +1,34 @@
-function addSlideActionsToButtons(buttons, slidesToToggle) {
-    buttons.forEach(button => {
-        button.addEventListener('click', () => slidesToToggle.forEach(slide => slide.classList.toggle('slider__item_hidden')));
-    });
+function makeSlide(index, allSlides, allButtons) {
+
+    toogleButtonCssClassName = 'slider__button_type_current';
+    const button = allButtons[index];
+    const slide = allSlides[index];
+    toggleItemCssClassName = 'slider__item_type_hidden';
+
+    if (slide.classList.contains('images__item')) toggleItemCssClassName = 'slider__item_type_hidden-image';
+    if (slide.classList.contains('cards__item')) toggleItemCssClassName = 'slider__item_type_hidden-card';
+
+    allButtons.forEach(item => item == button ? item.classList.add(toogleButtonCssClassName) : item.classList.remove(toogleButtonCssClassName));
+    allSlides.forEach(item => item == slide ? item.classList.remove(toggleItemCssClassName) : item.classList.add(toggleItemCssClassName))
+
 }
 
-function addActionsToSlides(slides, sliderButtons) {
+function addSliderFunctionality(section) {
 
-    slides.forEach((currentSlide, index, allSlides) => {
-        previousSlide = allSlides[index == 0 ? allSlides.length - 1 : index - 1];
-        nextSlide = allSlides[index == allSlides.length - 1 ? 0 : index + 1];
+    const sliders = [...section.querySelectorAll('.slider__items')];
+    const slidersButtons = [...section.querySelectorAll('.slider__buttons')];
 
-        console.log({previousSlide, nextSlide});
+    sliders.forEach((slider, index) => {
+        const sliderButtons = slidersButtons[index];
+        const slides = [...slider.querySelectorAll('.slider__item')];
+        const buttons = [...sliderButtons.querySelectorAll('.slider__button')];
+
+        buttons.forEach((button, index, allButtons) => {
+            button.addEventListener('click', (event) => makeSlide(index, slides, allButtons))
+        })
 
     });
-}
-
-function addSliderFunctionalityToSection(section) {
-
-    const slider = section.querySelectorAll('.slider__items');
-    const slides = section.querySelectorAll('.slider__item');
-    const elementWithSliderButtons = section.querySelector('.slider__buttons');
-    const sliderButtons = elementWithSliderButtons.querySelectorAll('.slider__button');
-
-    console.log({slider, slides, elementWithSliderButtons, sliderButtons});
-
-    if (!slider || !slides || !elementWithSliderButtons || !sliderButtons || slides.length != sliderButtons.length) return;
-
-    addActionsToSlides(slides, sliderButtons);
-
 }
 
 const sectionsWithSlider = [...document.querySelectorAll('.slider')];
-sectionsWithSlider.forEach(item => addSliderFunctionalityToSection(item));
+sectionsWithSlider.forEach(section => addSliderFunctionality(section));

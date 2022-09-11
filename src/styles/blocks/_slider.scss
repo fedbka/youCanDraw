@@ -1,13 +1,28 @@
 .slider {
 
+  &__item {
+
+    &_type_hidden {
+      display: none;
+    }
+  }
+
   &__buttons {
-    display: none;
+    display: flex;
     gap: 4px;
     justify-content: center;
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
     width: 100%;
+
+    &_type_images {
+      display: none;
+    }
+
+    &_type_cards {
+      display: none;
+    }    
   }
 
   &__button {
@@ -28,7 +43,7 @@
       opacity: 0.6;
     }
 
-    &_current {
+    &_type_current {
       background-image: url("../images/ellipse-black.svg");
     }
   }
@@ -38,14 +53,14 @@
   .slider {
     &__item {
 
-      &_hidden-item-type_card {
+      &_type_hidden-card {
         display: none;
       }
 
     }
 
     &__buttons {
-      &_under_cards {
+      &_type_cards {
         display: flex;
       }
     }
@@ -57,14 +72,14 @@
 
     &__item {
 
-      &_hidden-item-type_image {
+      &_type_hidden-image {
         display: none;
       }
 
     }
 
     &__buttons {
-      &_under_images {
+      &_type_images {
         display: flex;
         margin-bottom: 40px;
       }
